@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section id="accueil" className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-br from-blue-50 via-white to-amber-50">
+    <section id="accueil" className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-br from-blue-50 via-white to-rose-50">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
@@ -21,7 +21,7 @@ const Hero = () => {
           </div>
           <div className="md:w-1/2 pl-0 md:pl-10 animate-float">
             <div className="relative">
-              <div className="absolute -inset-0.5 rounded-lg bg-gradient-to-r from-cbleu to-cbleu-accent opacity-75 blur"></div>
+              <div className="absolute -inset-0.5 rounded-lg bg-gradient-to-r from-cbleu to-violet-500 opacity-75 blur"></div>
               <div className="relative bg-white rounded-lg p-6 md:p-8 shadow-xl">
                 <div className="aspect-[4/3] bg-cbleu rounded-lg flex items-center justify-center overflow-hidden">
                   <img 

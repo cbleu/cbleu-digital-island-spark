@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -67,7 +66,7 @@ export default {
 					light: '#5A9BD5',
 					DEFAULT: '#0066A4',
 					dark: '#00477A',
-					accent: '#FFB74D',
+					accent: '#FF719A',
 				}
 			},
 			borderRadius: {
@@ -113,7 +112,7 @@ export default {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'hero-pattern': 'linear-gradient(90deg, hsla(277, 75%, 84%, 1) 0%, hsla(297, 50%, 51%, 1) 100%)',
 				'blue-gradient': 'linear-gradient(90deg, hsla(205, 100%, 32%, 1) 0%, hsla(210, 100%, 50%, 0.8) 100%)',
-				'warm-blue-gradient': 'linear-gradient(90deg, hsla(205, 100%, 32%, 1) 0%, hsla(25, 100%, 70%, 1) 100%)',
+				'warm-blue-gradient': 'linear-gradient(90deg, hsla(205, 100%, 32%, 1) 0%, hsla(334, 100%, 65%, 1) 100%)',
 				'service-gradient': 'linear-gradient(109.6deg, rgba(236,246,255,1) 11.2%, rgba(244,248,252,1) 91.1%)',
 			},
 		}

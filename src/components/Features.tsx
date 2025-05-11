@@ -22,7 +22,7 @@ const featureItems = [
 
 const Features = () => {
   return (
-    <section className="py-16 bg-gradient-to-br from-cbleu to-cbleu-light text-white">
+    <section className="py-16 bg-gradient-to-br from-cbleu to-violet-500 text-white">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {featureItems.map((feature, index) => (
