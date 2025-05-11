@@ -4,32 +4,32 @@ import { Code, Globe, Smartphone, ShoppingBag, Database, Brain } from 'lucide-re
 
 const serviceItems = [
   {
-    icon: <Smartphone className="w-10 h-10 text-blue-600" />,
+    icon: <Smartphone className="w-10 h-10 text-cbleu" />,
     title: 'Applications Mobiles',
     description: 'Développement d\'applications iOS et Android sur-mesure avec une expérience utilisateur fluide et intuitive.'
   },
   {
-    icon: <Globe className="w-10 h-10 text-blue-600" />,
+    icon: <Globe className="w-10 h-10 text-cbleu" />,
     title: 'Sites Web',
     description: 'Création de sites web responsive, optimisés pour le référencement et adaptés à votre image de marque.'
   },
   {
-    icon: <ShoppingBag className="w-10 h-10 text-blue-600" />,
+    icon: <ShoppingBag className="w-10 h-10 text-cbleu" />,
     title: 'E-commerce',
     description: 'Mise en place de boutiques en ligne sécurisées et personnalisées pour développer votre activité commerciale.'
   },
   {
-    icon: <Code className="w-10 h-10 text-blue-600" />,
+    icon: <Code className="w-10 h-10 text-cbleu" />,
     title: 'Développement sur mesure',
     description: 'Conception et programmation d\'applications spécifiques répondant précisément à vos besoins métier.'
   },
   {
-    icon: <Database className="w-10 h-10 text-blue-600" />,
+    icon: <Database className="w-10 h-10 text-cbleu" />,
     title: 'Infrastructure Cloud',
     description: 'Mise en place et gestion de solutions cloud sécurisées, évolutives et performantes pour vos applications.'
   },
   {
-    icon: <Brain className="w-10 h-10 text-blue-600" />,
+    icon: <Brain className="w-10 h-10 text-cbleu" />,
     title: 'Intelligence Artificielle',
     description: 'Intégration de solutions d\'IA pour optimiser vos processus et améliorer l\'expérience utilisateur.'
   }

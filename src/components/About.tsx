@@ -8,14 +8,15 @@ const About = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
             <div className="relative">
-              <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 opacity-50 blur"></div>
+              <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-cbleu to-cbleu-accent opacity-50 blur"></div>
               <div className="relative rounded-lg overflow-hidden">
-                <div className="aspect-[4/3] bg-gradient-to-b from-blue-400 to-violet-500 p-10 flex items-center justify-center">
+                <div className="aspect-[4/3] bg-cbleu p-10 flex items-center justify-center">
                   <div className="w-full h-full flex items-center justify-center">
-                    <div className="text-white text-center">
-                      <div className="text-6xl font-bold mb-4">CBLEU</div>
-                      <div className="text-xl">La Réunion - Océan Indien</div>
-                    </div>
+                    <img 
+                      src="/lovable-uploads/6165e1f4-9101-4761-8cd8-e0bdf470e345.png" 
+                      alt="CBLEU Logo" 
+                      className="w-3/4"
+                    />
                   </div>
                 </div>
               </div>

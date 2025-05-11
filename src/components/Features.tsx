@@ -4,17 +4,17 @@ import { Shield, Star, Award } from 'lucide-react';
 
 const featureItems = [
   {
-    icon: <Star className="w-12 h-12 text-blue-600" />,
+    icon: <Star className="w-12 h-12 text-cbleu" />,
     title: 'Expertise',
     description: 'Notre équipe est composée d\'experts qualifiés dans tous les aspects du développement informatique.'
   },
   {
-    icon: <Award className="w-12 h-12 text-blue-600" />,
+    icon: <Award className="w-12 h-12 text-cbleu" />,
     title: 'Qualité',
     description: 'Nous nous engageons à fournir des solutions de haute qualité qui répondent aux standards internationaux.'
   },
   {
-    icon: <Shield className="w-12 h-12 text-blue-600" />,
+    icon: <Shield className="w-12 h-12 text-cbleu" />,
     title: 'Sécurité',
     description: 'La sécurité de vos données et de vos applications est notre priorité absolue.'
   }
@@ -22,7 +22,7 @@ const featureItems = [
 
 const Features = () => {
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-600 to-violet-700 text-white">
+    <section className="py-16 bg-gradient-to-br from-cbleu to-cbleu-light text-white">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {featureItems.map((feature, index) => (

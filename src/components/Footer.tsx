@@ -9,10 +9,12 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <div className="mb-4">
-              <span className="text-2xl font-bold">
-                C<span className="text-cbleu-accent">BLEU</span>
-              </span>
+            <div className="mb-4 flex items-center">
+              <img 
+                src="/lovable-uploads/6165e1f4-9101-4761-8cd8-e0bdf470e345.png" 
+                alt="CBLEU Logo" 
+                className="h-10 mr-2"
+              />
             </div>
             <p className="text-gray-300 mb-6 max-w-sm">
               CBLEU est votre partenaire technologique à La Réunion, spécialisé dans le développement d'applications mobiles et web innovantes.

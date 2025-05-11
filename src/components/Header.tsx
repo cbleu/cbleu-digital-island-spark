@@ -28,9 +28,9 @@ const Header = () => {
     )}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center z-50">
-          <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-violet-600">
-            C<span className="text-cbleu-accent">BLEU</span>
-          </span>
+          <div className="flex items-center">
+            <img src="/lovable-uploads/853b5012-903f-4a1b-b8cd-57248be4e649.png" alt="CBLEU Logo" className="h-10 mr-2" />
+          </div>
         </a>
         
         <nav className="hidden md:flex space-x-8">
@@ -38,7 +38,7 @@ const Header = () => {
             <a 
               key={item} 
               href={`#${item.toLowerCase().replace(' ', '-').normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`} 
-              className="font-medium text-gray-700 hover:text-cbleu-accent transition-colors underline-animation"
+              className="font-medium text-gray-700 hover:text-cbleu transition-colors underline-animation"
             >
               {item}
             </a>
@@ -61,7 +61,7 @@ const Header = () => {
                   key={item} 
                   href={`#${item.toLowerCase().replace(' ', '-').normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`} 
                   onClick={() => setIsOpen(false)}
-                  className="text-xl font-medium text-gray-800 hover:text-cbleu-accent transition-colors"
+                  className="text-xl font-medium text-gray-800 hover:text-cbleu transition-colors"
                 >
                   {item}
                 </a>
