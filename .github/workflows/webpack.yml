@@ -1,40 +1,27 @@
-name: Build & Deploy to o2switch
+name: Build & Deploy with Vite
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      # 1) Checkout du code
       - uses: actions/checkout@v4
-
-      # 2) Setup Node.js (choisissez la version que vous souhaitez)
-      - name: Use Node.js 20.x
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-
-      # 3) Installation des dépendances
       - name: Install dependencies
         run: npm ci
-
-      # 4) Build avec Webpack
-      - name: Build with Webpack
-        run: npx webpack --mode production
-
-      # 5) Déploiement FTP vers o2switch
+      - name: Build with Vite
+        run: npm run build
       - name: Deploy to o2switch via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ${{ secrets.O2SWITCH_FTP_HOST }}
           username: ${{ secrets.O2SWITCH_FTP_USER }}
           password: ${{ secrets.O2SWITCH_FTP_PASSWORD }}
-          # Remplacez ./dist si votre build sort dans un autre dossier
-          local-dir: ./dist
-          # Chemin relatif à votre dossier racine sur le serveur
+          local-dir: ./dist       # Vite génère ./dist par défaut
           server-dir: /cbleu.re
