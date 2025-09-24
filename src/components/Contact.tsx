@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { companyInfo } from '../config/company';
 
 const Contact = () => {
   return (
@@ -21,7 +22,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-lg mb-1">Téléphone</h3>
-                <p className="text-gray-600">+262 123 456 789</p>
+                <p className="text-gray-600">{companyInfo.phone}</p>
               </div>
             </div>
             
@@ -31,7 +32,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-lg mb-1">Email</h3>
-                <p className="text-gray-600">contact@cbleu.re</p>
+                <p className="text-gray-600">{companyInfo.email}</p>
               </div>
             </div>
             
@@ -42,8 +43,9 @@ const Contact = () => {
               <div>
                 <h3 className="font-semibold text-lg mb-1">Adresse</h3>
                 <p className="text-gray-600">
-                  Saint-Denis<br />
-                  Île de La Réunion, France
+                  {companyInfo.address.street}<br />
+                  {companyInfo.address.city}<br />
+                  {companyInfo.address.region}
                 </p>
               </div>
             </div>

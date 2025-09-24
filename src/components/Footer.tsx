@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { companyInfo } from '../config/company';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,7 +18,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-300 mb-6 max-w-sm">
-              CBLEU est votre partenaire technologique à La Réunion, spécialisé dans le développement d'applications mobiles et web innovantes.
+              {companyInfo.description}
             </p>
             <p className="text-gray-400 text-sm">
               &copy; {currentYear} CBLEU. Tous droits réservés.
@@ -66,7 +67,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-gray-400 mb-4 md:mb-0">
-              CBLEU - SIRET: XXXXXXXXX - Saint-Denis, La Réunion
+              {companyInfo.name} - SIRET: {companyInfo.legal.siret} - {companyInfo.legal.location}
             </div>
             <div className="text-sm text-gray-400">
               <a href="#" className="hover:text-cbleu-accent mr-6">Mentions légales</a>
