@@ -44,6 +44,7 @@ const Contact = () => {
                 <h3 className="font-semibold text-lg mb-1">Adresse</h3>
                 <p className="text-gray-600">
                   {companyInfo.address.street}<br />
+                  {companyInfo.address.street2 && <>{companyInfo.address.street2}<br /></>}
                   {companyInfo.address.city}<br />
                   {companyInfo.address.region}
                 </p>

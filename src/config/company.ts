@@ -4,6 +4,7 @@ export const companyInfo = {
   email: "contact@cbleu.re",
   address: {
     street: "167, avenue de la grande ourse", // Remplacez par votre adresse
+    street2: "", // Complément d'adresse (optionnel)
     city: "97434 Saint-Paul",
     region: "Île de La Réunion, France"
   },
