@@ -56,8 +56,11 @@ const LegalNotice = () => {
                 </h2>
                 <div className="space-y-3 text-card-foreground">
                   <p>Ce site est hébergé par :</p>
-                  <p><strong>Lovable</strong></p>
-                  <p>Service d'hébergement web</p>
+                  <p><strong>o2switch</strong></p>
+                  <p>Chemin des Pardiaux</p>
+                  <p>63000 Clermont-Ferrand</p>
+                  <p>SIRET : 510 909 807 00032</p>
+                  <p>Téléphone : +33 4 44 44 60 40</p>
                 </div>
               </section>
 

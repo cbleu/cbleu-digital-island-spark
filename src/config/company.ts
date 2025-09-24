@@ -9,7 +9,7 @@ export const companyInfo = {
     region: "Île de La Réunion, France"
   },
   legal: {
-    siret: "449 702 349", // Remplacez par votre SIRET
+    siret: "449 702 349 00035", // Remplacez par votre SIRET
     location: "Saint-Denis, La Réunion"
   },
   description: "CBLEU est votre partenaire technologique à La Réunion, spécialisé dans le développement d'applications mobiles et web innovantes."
