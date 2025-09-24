@@ -70,7 +70,7 @@ const Footer = () => {
               {companyInfo.name} - SIRET: {companyInfo.legal.siret} - {companyInfo.legal.location}
             </div>
             <div className="text-sm text-gray-400">
-              <a href="#" className="hover:text-cbleu-accent mr-6">Mentions légales</a>
+              <a href="/mentions-legales" className="hover:text-cbleu-accent mr-6">Mentions légales</a>
               <a href="#" className="hover:text-cbleu-accent">Politique de confidentialité</a>
             </div>
           </div>
