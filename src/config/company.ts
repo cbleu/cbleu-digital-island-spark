@@ -4,7 +4,7 @@ export const companyInfo = {
   email: "contact@cbleu.re",
   address: {
     street: "167, avenue de la grande ourse", // Remplacez par votre adresse
-    city: "97434 Saint-Gilles-Les-Bains",
+    city: "97434 Saint-Paul",
     region: "Île de La Réunion, France"
   },
   legal: {
