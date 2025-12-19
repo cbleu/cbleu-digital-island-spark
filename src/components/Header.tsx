@@ -36,18 +36,9 @@ const Header = () => {
         
         <nav className="hidden md:flex space-x-8">
           {['Accueil', 'Services', 'À propos', 'Contact'].map((item) => {
-            const isHome = item === 'Accueil';
-            const href = isHome ? '/' : `/#${item.toLowerCase().replace(' ', '-').normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`;
+            const href = `/#${item.toLowerCase().replace(' ', '-').normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`;
             
-            return isHome ? (
-              <Link 
-                key={item} 
-                to={href}
-                className="font-medium text-gray-700 hover:text-cbleu transition-colors underline-animation"
-              >
-                {item}
-              </Link>
-            ) : (
+            return (
               <a 
                 key={item} 
                 href={href}
@@ -71,19 +62,9 @@ const Header = () => {
           <div className="fixed inset-0 bg-white flex flex-col items-center justify-center">
             <div className="flex flex-col space-y-8 text-center">
               {['Accueil', 'Services', 'À propos', 'Contact'].map((item) => {
-                const isHome = item === 'Accueil';
-                const href = isHome ? '/' : `/#${item.toLowerCase().replace(' ', '-').normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`;
+                const href = `/#${item.toLowerCase().replace(' ', '-').normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`;
                 
-                return isHome ? (
-                  <Link 
-                    key={item} 
-                    to={href}
-                    onClick={() => setIsOpen(false)}
-                    className="text-xl font-medium text-gray-800 hover:text-cbleu transition-colors"
-                  >
-                    {item}
-                  </Link>
-                ) : (
+                return (
                   <a 
                     key={item} 
                     href={href}
