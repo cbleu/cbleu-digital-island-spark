@@ -31,7 +31,7 @@ const Footer = () => {
               {['Accueil', 'Services', 'À propos', 'Contact'].map((item) => (
                 <li key={item}>
                   <a 
-                    href={`#${item.toLowerCase().replace(' ', '-').normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`}
+                    href={`/#${item.toLowerCase().replace(' ', '-').normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`}
                     className="text-gray-300 hover:text-cbleu-accent transition-colors"
                   >
                     {item}
@@ -53,7 +53,7 @@ const Footer = () => {
               ].map((item) => (
                 <li key={item}>
                   <a 
-                    href="#services"
+                    href="/#services"
                     className="text-gray-300 hover:text-cbleu-accent transition-colors"
                   >
                     {item}
@@ -71,7 +71,7 @@ const Footer = () => {
             </div>
             <div className="text-sm text-gray-400">
               <a href="/mentions-legales" className="hover:text-cbleu-accent mr-6">Mentions légales</a>
-              <a href="#" className="hover:text-cbleu-accent">Politique de confidentialité</a>
+               <a href="/politique-de-confidentialite" className="hover:text-cbleu-accent">Politique de confidentialité</a>
             </div>
           </div>
         </div>

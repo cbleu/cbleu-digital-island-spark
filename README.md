@@ -62,6 +62,18 @@ This project is built with:
 
 ## How can I deploy this project?
 
+### External hosting on o2switch (cbleu.re)
+
+After rebuilding the static site, upload the complete contents of `dist/` to the site’s document root, including the hidden `.htaccess` file. Vite copies `public/robots.txt`, `public/sitemap.xml` and `public/.htaccess` into `dist/`.
+
+The `.htaccess` redirects HTTP to HTTPS with a permanent 301 before handling SPA routes. Enable a valid SSL certificate for cbleu.re (and www.cbleu.re if used) in the hosting control panel. This Apache file has no effect on Lovable hosting.
+
+After deployment, verify that `http://cbleu.re/robots.txt` redirects to `https://cbleu.re/robots.txt`, which returns status 200 and plain text. Verify the same redirect for the homepage and legal pages, and refresh each legal page directly. Paths and query strings should be preserved.
+
+In Google Search Console, submit `https://cbleu.re/sitemap.xml` under Sitemaps, not `robots.txt`. The robots file tells crawlers which URLs they may fetch; it is not a page that needs indexing. It currently allows all crawlers. If Google still reports a robots fetch failure after deployment, check the exact error and the hosting firewall or bot protection: a successful request here does not prove that every Googlebot request succeeds.
+
+The privacy policy is a draft based on the current site. Before publication, confirm actual retention periods, technical providers and processing practices. The visible contact form currently has no sending service; direct visitors to email or telephone until it is connected.
+
 Simply open [Lovable](https://lovable.dev/projects/ef9369ff-9201-4b04-86eb-83e91fe5567b) and click on Share -> Publish.
 
 ## Can I connect a custom domain to my Lovable project?
