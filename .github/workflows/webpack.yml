@@ -24,4 +24,4 @@ jobs:
           username: ${{ secrets.O2SWITCH_FTP_USER }}
           password: ${{ secrets.O2SWITCH_FTP_PASSWORD }}
           local-dir: ./public/ # Vite génère ./dist par défaut
-          server-dir: /cbleu.re/
+          server-dir: /
