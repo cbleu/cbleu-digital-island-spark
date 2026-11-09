@@ -72,7 +72,7 @@ After deployment, verify that `http://cbleu.re/robots.txt` redirects to `https:/
 
 In Google Search Console, submit `https://cbleu.re/sitemap.xml` under Sitemaps, not `robots.txt`. The robots file tells crawlers which URLs they may fetch; it is not a page that needs indexing. It currently allows all crawlers. If Google still reports a robots fetch failure after deployment, check the exact error and the hosting firewall or bot protection: a successful request here does not prove that every Googlebot request succeeds.
 
-The privacy policy is a draft based on the current site. Before publication, confirm actual retention periods, technical providers and processing practices. The visible contact form currently has no sending service; direct visitors to email or telephone until it is connected.
+The privacy policy text was supplied by the owner. Before publication, confirm it matches the site: the contact form must actually send messages by email, and no cookies or external services should be used.
 
 Simply open [Lovable](https://lovable.dev/projects/ef9369ff-9201-4b04-86eb-83e91fe5567b) and click on Share -> Publish.
 
